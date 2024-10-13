@@ -24,6 +24,7 @@ void print(Node *node)
     if(node!=NULL) 
     {
          std::cout<<node->data<<" ";
+         /*std::cout<<node->data<<" "; // Перенести для симетричного кода на 28 и 29*/ 
          print(node->left);
          print(node->right);
     }
@@ -49,6 +50,7 @@ void main()
     add(root->left,6);
     add(root->right,2);
     add(root->right->left,3);
+    add(root->right->right,4);
     add(root->right->right->left,7);
     print(root);
     /*#5 6 2 2 3 3 7*/
